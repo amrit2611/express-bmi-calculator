@@ -1,15 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 //bodyParser is an npm package that allows us to parse the information sent from the post request.
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'url'; 
 import { dirname } from 'path';
 
-const __filename = fileURLToPath(import.meta.url); 
+const __filename = fileURLToPath(import.meta.url);  
 const __dirname = dirname(__filename);
 const app = express();
 const port = 3000;
 
-app.use(bodyParser.urlencoded({ extended: true })) 
+app.use(bodyParser.urlencoded({ extended: true }))  
 //urlcoded used when data posted through and html form. Other forms include JSON and text.
 //The extended option allows us to post nested objects.
 

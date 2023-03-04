@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body class="bg-indigo-600 place-content-center">
-    <form  method="post" class="">
-        <h1 class="">BMI Calculator</h1>
-        <input type="text" name="weight" placeholder="Enter Weight " class="">
-        <input type="text" name="height" placeholder="Enter Height (in meters)" class="">
-        <button type="submit" name="submit" class="">Calculate BMI</button>
-    </form>
-</body>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="grid h-screen place-items-center">
+      <form
+        method="post"
+        class="bg-gray-300 border-black border-solid border-x-2 border-y-4 rounded-xl p-2"
+      >
+        <h1 class="mx-5 my-6 w-min text-center">BMI&nbsp;Calculator</h1>
+        <input
+          type="text"
+          name="weight"
+          placeholder="Enter Weight "
+          class="m-2 py-1 px-2 rounded border-solid border-gray-500 border-2"
+        />
+        <input
+          type="text"
+          name="height"
+          placeholder="Enter Height (in meters)"
+          class="m-2 py-1 px-2 rounded border-solid border-gray-500 border-2"
+        />
+        <button
+          type="submit"
+          name="submit"
+          class="text-center m-2 p-2 text-white bg-black rounded"
+        >
+          Calculate&nbsp;BMI
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
